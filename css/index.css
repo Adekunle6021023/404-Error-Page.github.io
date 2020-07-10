@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header-text-container {
+    font-family: "Inconsolata", serif;
+    color: #333333;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-image-container  img {
+    position: relative;
+    width: 60%;
+    height: auto;
+}
+
+.text-container {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-box-one {
+    font-family: "Space Mono Bold", monospace;
+    font-size: 3rem;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.text-box-one .main-text {
+    text-align: left;
+}
+
+.text-box-two {
+    font-family: "Space Mono Regular", monospace;
+    font-size: 1rem;
+    font-weight: 540;
+    color: #3d1f1fbb;
+    display: flex;
+}
+
+.text-box-two .sub-text {
+    text-align: left;
+}
+
+
+.main-button {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+}
+.main-button a {
+    border: #262626 solid 1px;
+    background-color: #262626;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 0.60rem;
+}
+
+.main-footer {
+    font-family: "Montserrat SemiBold", sans-serif;
+    font-size: 0.55rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin: 2rem 0 0 0;
+}
+
+/********************
+   MEDIA QUERIES
+********************/
+
+/*MOBILE - 375 PX*/
+
+@media screen and (max-width: 375px){
+    .main-container {
+        flex-direction: column;
+    }
+
+    .text-container {
+        align-items: center;
+    }
+
+    .text-box-one .main-text {
+        padding: 0.25rem;
+        text-align: center;
+    }
+}
+
+/*EXTRA LARGE SCREENS */
+
+@media screen and (min-width: 2560px){
+    .main-container{
+        font-size: x-large;
+    }
+
+    .main-image-container  img {
+        width: 100%;
+    }
+
+    .main-footer {
+        font-size: large;
+    }
+}
